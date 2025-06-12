@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Footer from '../components/Footer';
+import Link from 'next/link';
 
 export default function LoginPage() {
   const router = useRouter();
@@ -47,7 +48,9 @@ export default function LoginPage() {
         <span>Forgot your password?</span>
         <input type="submit" value='Login' />
       </form>
-      <p>I'm new here</p>
+      <Link href="/signin">
+        <p className="signInButton">I'm new here</p>
+      </Link>
       <Footer />
     </main>
   );

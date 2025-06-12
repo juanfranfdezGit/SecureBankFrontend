@@ -21,10 +21,21 @@
         width: 100%;
         background: blue;
         color: white;
+        margin-top: 20px;
+    }
+
+    input[type=submit].signinSubmit {
+        margin-top: 0px;
     }
 
     span {
         color: blue;
         align-self: flex-end;
+        position: absolute;
+        bottom: 48px;
     }
+}
+
+.signInButton {
+    margin-top: 30px;
 }
