@@ -1,3 +1,31 @@
+.formSection {
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 2rem 8rem;
+
+    img {
+        width: 140px;
+        margin-bottom: 10dvh;
+        filter: drop-shadow(0 0 20px white);
+        position: relative;
+        z-index: 2;
+    }
+
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        max-height: 29dvh;
+        min-height: 200px;
+        z-index: 1;
+    }
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -12,16 +40,16 @@
         width: 100%;
         padding: 8px;
         border: none;
-        background: #e6e6e6;
+        background: var(--white700);
         border-radius: 4px;
         text-align: center;
     }
 
     input[type=submit] {
         width: 100%;
-        background: blue;
-        color: white;
-        margin-top: 20px;
+        background: var(--primary-color);
+        color: var(--white900);
+        margin-top: 24px;
     }
 
     input[type=submit].signinSubmit {
@@ -29,10 +57,10 @@
     }
 
     span {
-        color: blue;
+        color: var(--white400);
         align-self: flex-end;
         position: absolute;
-        bottom: 48px;
+        bottom: 54px;
     }
 }
 

@@ -26,8 +26,8 @@ export default function LoginPage() {
   };
 
   return (
-    <main className="loginSection">
-      <div className='loginBanner'>
+    <main className="formSection">
+      <div className='formBanner'>
         <img src="/assets/logo.svg" alt="logo" />
         <img className='back' src="/assets/back01.jpg" alt="back" />
       </div>
@@ -35,13 +35,13 @@ export default function LoginPage() {
       <form onSubmit={handleSubmit} className="form">
         <input
           type="text"
-          placeholder="Usuario"
+          placeholder="User"
           value={form.username}
           onChange={(e) => setForm({ ...form, username: e.target.value })}
         />
         <input
           type="password"
-          placeholder="Contraseña"
+          placeholder="Password"
           value={form.password}
           onChange={(e) => setForm({ ...form, password: e.target.value })}
         />
@@ -49,7 +49,7 @@ export default function LoginPage() {
         <input type="submit" value='Login' />
       </form>
       <Link href="/signin">
-        <p className="signInButton">I'm new here</p>
+        <p className="signInButton">Create Account</p>
       </Link>
       <Footer />
     </main>
