@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    z-index: 10;
+    width: 90%;
+
+    input {
+        width: 100%;
+        padding: 8px;
+        border: none;
+        background: #e6e6e6;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background: blue;
+        color: white;
+    }
+
+    span {
+        color: blue;
+        align-self: flex-end;
+    }
+}

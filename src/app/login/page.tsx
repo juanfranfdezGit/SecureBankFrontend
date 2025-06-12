@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Footer from '../components/Footer';
 
 export default function LoginPage() {
   const router = useRouter();
@@ -10,41 +11,44 @@ export default function LoginPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Aquí puedes llamar a tu backend con fetch o axios
     const res = await fetch('http://localhost:8080/api/users/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
     });
 
     if (res.ok) {
-        router.push('/dashboard');
+      router.push('/dashboard');
     } else {
-        alert('Credenciales incorrectas');
+      alert('Credenciales incorrectas');
     }
   };
 
   return (
-    <main className="flex justify-center items-center min-h-screen">
-      <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+    <main className="loginSection">
+      <div className='loginBanner'>
+        <img src="/assets/logo.svg" alt="logo" />
+        <img className='back' src="/assets/back01.jpg" alt="back" />
+      </div>
+
+      <form onSubmit={handleSubmit} className="form">
         <input
           type="text"
           placeholder="Usuario"
           value={form.username}
           onChange={(e) => setForm({ ...form, username: e.target.value })}
-          className="border p-2"
         />
         <input
           type="password"
           placeholder="Contraseña"
           value={form.password}
           onChange={(e) => setForm({ ...form, password: e.target.value })}
-          className="border p-2"
         />
-        <button type="submit" className="bg-blue-500 text-white py-2">
-          Iniciar sesión
-        </button>
+        <span>Forgot your password?</span>
+        <input type="submit" value='Login' />
       </form>
+      <p>I'm new here</p>
+      <Footer />
     </main>
   );
 }

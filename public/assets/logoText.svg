@@ -1,0 +1,32 @@
+<svg width="280" height="120" viewBox="0 0 280 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo transparente -->
+
+  <!-- Ícono: Escudo geométrico con circuito más detallado -->
+  <g transform="translate(20,20)">
+    <!-- Escudo: polígono angular moderno -->
+    <path d="M50 0 L90 20 L90 60 L50 90 L10 60 L10 20 Z" fill="#0066FF" stroke="#004CCC" stroke-width="3" rx="8" ry="8"></path>
+    <!-- Circuito interior: más líneas y nodos -->
+    <circle cx="50" cy="20" r="5" fill="white"></circle>
+    <line x1="50" y1="20" x2="50" y2="60" stroke="white" stroke-width="2"></line>
+    <circle cx="50" cy="60" r="5" fill="white"></circle>
+
+    <line x1="50" y1="40" x2="70" y2="40" stroke="white" stroke-width="2"></line>
+    <circle cx="70" cy="40" r="3" fill="white"></circle>
+
+    <line x1="30" y1="40" x2="50" y2="40" stroke="white" stroke-width="2"></line>
+    <circle cx="30" cy="40" r="3" fill="white"></circle>
+
+    <line x1="30" y1="40" x2="30" y2="60" stroke="white" stroke-width="2"></line>
+    <circle cx="30" cy="60" r="3" fill="white"></circle>
+
+    <line x1="30" y1="60" x2="50" y2="60" stroke="white" stroke-width="2"></line>
+  </g>
+
+  <!-- Texto separado y minimalista -->
+  <text x="130" y="65" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="40" fill="#0066FF" letter-spacing="0.04em">
+    SECURE
+  </text>
+  <text x="130" y="100" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="24" fill="white" letter-spacing="0.06em">
+    BANK
+  </text>
+</svg>

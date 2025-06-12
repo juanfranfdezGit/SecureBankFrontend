@@ -1,0 +1,14 @@
+@import './login/login.css';
+@import './common/form.css';
+@import './common/footer.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    font-size: .9rem;
+    font-weight: 600;
+}
