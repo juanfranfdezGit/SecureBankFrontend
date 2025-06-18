@@ -19,6 +19,8 @@ export default function LoginPage() {
     });
 
     if (res.ok) {
+      const data = await res.json();
+      localStorage.setItem('token', data.token);
       router.push('/dashboard');
     } else {
       alert('Credenciales incorrectas');
